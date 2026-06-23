@@ -1,52 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Add Product</title>
+
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
+
     <nav>
+
         <h2>♻️ ReMarket</h2>
+
         <div class="nav-links">
+
             <a href="index.html">Home</a>
+
             <a href="product.html">Products</a>
+
         </div>
+
     </nav>
+
+
     <section class="add-product">
+
         <h1>Add Product</h1>
-        <form>
+
+        <form id="productForm">
+
             <label>Product Name</label>
-            <input type="text" placeholder="Enter Product Name">
+
+            <input
+                type="text"
+                id="productName"
+                placeholder="Enter Product Name"
+                required>
+
 
             <label>Price</label>
-            <input type="number" placeholder="Enter Price">
+
+            <input
+                type="number"
+                id="productPrice"
+                placeholder="Enter Price"
+                required>
+
 
             <label>Category</label>
-            <select>
+
+            <select id="productCategory">
+
                 <option>Mobiles</option>
+
                 <option>Books</option>
+
                 <option>Furniture</option>
+
                 <option>Laptops</option>
+
                 <option>Musical Instruments</option>
+
                 <option>Fitness</option>
-             </select>
-             <label>Condition</label>
-             <select>
+
+            </select>
+
+
+            <label>Condition</label>
+
+            <select id="productCondition">
+
                 <option>New</option>
+
                 <option>Like New</option>
+
                 <option>Good</option>
+
                 <option>Fair</option>
+
                 <option>Used</option>
-             </select>
-             <label>Description</label>
-             <textarea rows="5" placeholder="Enter Description"></textarea>
-             <label>Upload Image</label>
-             <input type="file">
-             <button>Add Product</button>
+
+            </select>
+
+
+            <label>Description</label>
+
+            <textarea
+                id="productDescription"
+                rows="5"
+                placeholder="Enter Description"
+                required>
+
+            </textarea>
+
+
+            <label>Image URL</label>
+
+            <input
+                type="text"
+                id="productImage"
+                placeholder="Paste image URL"
+                required>
+
+
+            <button type="submit">
+
+                Add Product
+
+            </button>
+
         </form>
+
     </section>
-    
+
+
+    <script src="add-product.js"></script>
+
 </body>
+
 </html>
